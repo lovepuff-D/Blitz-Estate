@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Frontend</title>
+	<link rel="stylesheet" href="css/tempSelectors.scss">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="fonts/stylesheet.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<main>
+	<header class="header-header">
+		<div class="wrapper">
+			<div class="header">
+				<div class="menu">
+					<div class="burger-menu">
+						<button class="burger-icon">
+							<div class="burger-line">
+							
+							</div>
+						</button>
+						<div class="burger-text">Меню</div>
+					</div>
+					<div class="logo">
+						<img src="img/logo.svg" alt="">
+						<h1>Продажа недвижимости в Москва-Сити</h1>
+					</div>
+					<div class="callback">
+						<a href="tel:+7 (495) 199-19-99" class="number-tel"><span>+7 (495) 199-19-99</span></a>
+						<button class="getCallBack button let-meeting">Заказать звонок</button>
+					</div>
+				</div>
+				<div class="main">
+					<h1>
+						<span>Агентство</span>
+						<span>с международным </span>
+						<span>именем Blitz Estate</span>
+					</h1>
+					<p>
+						<span>Поможем продать, купить и арендовать</span>
+						<span>недвижимость в Москве, районе Сити и области</span>
+					</p>
+					<div class="row-number-info">
+						<div class="text-with-number">
+							<span class="main-number">
+								17
+							</span>
+							<span class="main-text">
+								Работаем в 17 странах
+							</span>
+						</div>
+						<div class="text-with-number">
+							<span class="main-number">
+								1963
+							</span>
+							<span class="main-text">
+								Помогли 1963-м клиентам
+							</span>
+						</div>
+						<div class="text-with-number">
+							<span class="main-number">
+								10
+							</span>
+							<span class="main-text">
+								Лет на рынке недвижимости
+							</span>
+						</div>
+					</div>
+					<div class="vine">
+						<span class="vine-picture"></span>
+						<p>
+							<span>
+								Пройди тест и получи в подарок бутылку
+							</span>
+							<span>
+								шампанского Veuve Clicquot
+							</span>
+						</p>
+					</div>
+					<button class="button scroll-to-test">Подобрать недвижимость</button>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="test">
+		<div class="wrapper">
+			<header class="test-header">
+				<h1 class="main-heading">Пройдите тест из 5 вопросов</h1>
+				<p>Мы подберём 20 покупателей готовых купить вашу недвижимость в течение 24 часов</p>
+			</header>
+			<section class="main">
+				<div class="test-block">
+					<div class="test-block-left">
+						<div class="test-question active">
+							<h2>Выберите местоположение объекта</h2>
+							<label for="Russian">
+								<input type="radio" id="Russian" name="1">
+								<img src="img/Russian.png" alt="">
+								<p>В россии</p>
+							</label>
+							<label for="OtherCountry">
+								<input type="radio" id="OtherCountry" name="1">
+								<img src="img/OtherCountry.png" alt="">
+								<p>За границой</p>
+							</label>
+						</div>
+						<div class="test-question">
+							<h2>Выберите город</h2>
+							<label for="Moskov">
+								<input type="radio" id="Moskov" name="2">
+								<img src="img/mainBackground.png" alt="">
+								<p>В россии</p>
+							</label>
+							<label for="New-York">
+								<input type="radio" id="New-York" name="2">
+								<img src="img/OtherCountry.png" alt="">
+								<p>За границой</p>
+							</label>
+						</div>
+						<div class="test-question">
+							<h2>Выберите Район</h2>
+							<label for="Sovetskiy">
+								<input type="radio" id="Sovetskiy" name="1">
+								<img src="img/logo.svg" alt="">
+								<p>В россии</p>
+							</label>
+							<label for="Ghetto">
+								<input type="radio" id="Ghetto" name="1">
+								<img src="img/OtherCountry.png" alt="">
+								<p>За границой</p>
+							</label>
+						</div>
+						<div class="test-question">
+							<h2>Выберите Улицу</h2>
+							<label for="Zorge">
+								<input type="radio" id="Zorge" name="1">
+								<img src="img/Russian.png" alt="">
+								<p>В россии</p>
+							</label>
+							<label for="Square">
+								<input type="radio" id="Square" name="1">
+								<img src="img/OtherCountry.png" alt="">
+								<p>За границой</p>
+							</label>
+						</div>
+						<div class="test-question">
+							<h2>Выберите Дом</h2>
+							<label for="96a">
+								<input type="radio" id="96a" name="1">
+								<img src="img/vine.png" alt="">
+								<p>В россии</p>
+							</label>
+							<label for="2b">
+								<input type="radio" id="2b" name="1">
+								<img src="img/OtherCountry.png" alt="">
+								<p>За границой</p>
+							</label>
+						</div>
+						<div class="test-question">
+							<div class="centre">
+								<h2>Теперь мы знаем, что ты хочешь</h2>
+								<div>
+									<button class="button chose-appart">Выбери апартаменты</button>
+								</div>
+							</div>
+						</div>
+						<div class="test-footer">
+							<p class="how-many-right">Вы ответили на:
+								<span id="counterValue">0/5</span>
+								вопросов
+							</p>
+							<button class="next-question">Продолжить <span><img src="img/nextVector.png" alt=""></span>
+							</button>
+						</div>
+					</div>
+					<div class="test-block-right">
+						<ul>
+							<li class="advantage">
+								Поможем Вам приобрести, продать или арендовать необходимую недвижимость
+							</li>
+							<li class="advantage">
+								Продадим вашу недвижимость за 21 день или выкупим сами по стоимостьи в договоре
+							</li>
+							<li class="advantage">
+								Забронируем понравившуюся квартиру и зафиксируем стоимость для вас на момент
+								бронирования
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</div>
+	</section>
+	<section class="services">
+		<div class="wrapper">
+			<h1 class="main-heading">Наши услуги на международном рынке</h1>
+			<div class="services-body">
+				<a href="" class="gallery-services gallery-1">
+					<div class="block-animated">
+						<div class="gallery-body">
+							<h3 class="gallery-heading">Жилая недвижимость</h3>
+							<p class="gallery-subtitle">
+								Сопровождение сделок по продаже, купли и аренде объектов
+								недвижимости под ключ.
+							</p>
+							<button class="button-more">Узнать больше</button>
+						</div>
+					</div>
+				</a>
+				<a href="" class="gallery-services gallery-2">
+					<div class="gallery-body">
+						<h3 class="gallery-heading">Доходная недвижимость</h3>
+						<p class="gallery-subtitle">Помощь в поиске и приобретении объектов, приносящих стабильный
+							рентный доход. Диверсификация рисков через инвестиции в различные рынки и типы недвижимости
+						</p>
+						<button class="button-more">Узнать больше</button>
+					</div>
+				</a>
+				<a href="" class="gallery-services gallery-3">
+					<div class="gallery-body">
+						<h3 class="gallery-heading"
+						>Инвестиционные операции
+						</h3>
+						<p class="gallery-subtitle">
+							Консультации на уровне высококвалифицированных менеджеров family office – выбор
+							инвестиционных моделей, стратегий и решений.
+						</p>
+						<button class="button-more">
+							Узнать больше
+						</button>
+					</div>
+				</a>
+				<a href="" class="gallery-services gallery-4">
+					<div class="gallery-body">
+						<h3 class="gallery-heading">
+							Покупка яхт
+						</h3>
+						<p class="gallery-subtitle">
+							Опытные брокеры помогут выбрать яхту под ваши параметры и пожелания, правильно провести
+							регистрацию в юрисдикции с низкими налогами, решить вопрос с арендой причала и подбором
+							команды.
+						</p>
+						<button class="button-more">Узнать больше</button>
+					</div>
+				</a>
+				<a href="" class="gallery-services gallery-5">
+					<div class="gallery-body">
+						<h3 class="gallery-heading">
+							Доверительное управление
+						</h3>
+						<p class="gallery-subtitle">
+							Правильный выбор, основанный на толерантности к рискам и целях клиента. Приумножение
+							капитала, юридическая защита собственности, конфиденциальность сделок.
+						</p>
+						<button class="button-more">Узнать больше</button>
+					</div>
+				</a>
+				<a href="" class="gallery-services gallery-6">
+					<div class="gallery-body">
+						<h3 class="gallery-heading">
+							Консьерж сервис
+						</h3>
+						<p class="gallery-subtitle">
+							Услуги личного консьержа: зафрахтовать яхту, чартер на частный самолёт, получить доступ к
+							закрытым мероприятиям и многое другое.
+						</p>
+						<button class="button-more">Узнать больше</button>
+					</div>
+				</a>
+			</div>
+		</div>
+	</section>
+	<section class="catalog">
+		<div class="wrapper">
+			<header class="catalog-header">
+				<h1 class="main-heading">Выберите апартаменты в Москва-Сити</h1>
+				<p class="main-subtitle">Мы включили в наш каталог все апартаменты доступные для покупки в
+					Москва-Сити</p>
+			</header>
+			<div class="catalog-body">
+				<div class="catalog-tabs">
+					
+					<div class="tab">
+						<label for="catalog-all" class="catalog-tabs-button ">
+							Показать все
+						</label>
+						<input id="catalog-all" type="radio" name="catalog">
+					</div>
+					<div class="tab">
+						<label for="catalog-20-30" class="catalog-tabs-button ">
+							От 20-30 млн
+						</label>
+						<input id="catalog-20-30" type="radio" name="catalog">
+					</div>
+					<div class="tab">
+						<label for="catalog-30-50" class="catalog-tabs-button ">
+							От 30-50 млн
+						</label>
+						<input id="catalog-30-50" type="radio" name="catalog">
+					</div>
+					<div class="tab">
+						<label for="catalog-50-100" class="catalog-tabs-button ">
+							От 50-100 млн
+						</label>
+						<input id="catalog-50-100" type="radio" name="catalog">
+					</div>
+					<div class="tab">
+						<label for="catalog-100" class="catalog-tabs-button ">
+							Более 100 млн
+						</label>
+						<input id="catalog-100" type="radio" name="catalog">
+					</div>
+				
+				</div>
+				<div class="catalog-apartments">
+					
+					<div class="apartment">
+						<img src="img/apartments/Rectangle 2.1.png" alt="">
+						<a href="#" class="apartment-block-name">
+							<p class="apartment-name">
+								Апартаменты в «башне ОКО»
+								<span class="lot">
+									Лот № 4536
+								</span>
+							</p>
+						</a>
+						<div class="apartment-block-info">
+							<p class="price">25 600 000 ₽
+								<span class="price-m2">365 714 ₽ за м²</span>
+							</p>
+							<p class="square">
+								Площадь 70 м²
+								<span class="floor">Этаж 52</span>
+							</p>
+						</div>
+						<button class="let-meeting">Назначить просмотр</button>
+					</div>
+					<div class="apartment">
+						<img src="img/apartments/Rectangle 2.1 (1).png" alt="">
+						<a href="#" class="apartment-block-name">
+							<p class="apartment-name">
+								Апартаменты в «башне Империя» (ЦЕНУ)
+								<span class="lot">
+									Лот № 4547
+								</span>
+							</p>
+						</a>
+						<div class="apartment-block-info">
+							<p class="price">27 900 000 ₽
+								<span class="price-m2">420 000 ₽ за м²</span>
+							</p>
+							<p class="square">
+								Площадь 62 м²
+								<span class="floor">Этаж 35</span>
+							</p>
+						</div>
+						<button class="let-meeting">Назначить просмотр</button>
+					</div>
+				
+				</div>
+			</div>
+			<button class="apartments-more">Показать еще</button>
+			<div class="catalog-modal">
+				<h3 class="contact-header">Оставьте заявку для связи</h3>
+				<form>
+					<label for="name">Введите имя</label>
+					<input autocomplete="off" type="text" id="name">
+					<label for="email">Введите E-mail</label>
+					<input autocomplete="off" type="text" id="email">
+					<label for="phoneNumber">Введите номер телефона</label>
+					<input autocomplete="off" type="text" id="phoneNumber" value="+7">
+					<button class="contact-send button">Отправить</button>
+				</form>
+				<button class="exit"></button>
+			</div>
+			<div class="thanks">Спасибо, скоро с вами свяжемся</div>
+		</div>
+	</section>
+	<section class="gallery">
+		<div class="wrapper">
+			<!--			<button class="prev">Prev</button>-->
+			<!--			<button class="next">Next</button>-->
+			
+			<div class="gallery-body">
+				<div class="gallery-block-left">
+					<h1 class="main-heading">Blitz Estate - на рынке недвижимости с 2008 года</h1>
+					<p class="main-subtitle">Blitz Estate – международная компания по управлению недвижимостью и
+						финансами. Основана в 2008
+						г. в Австрии. На сегодня представлена в Англии, Испании, Латвии, ОАЭ, Австрии и России, кроме
+						того имеет партнерскую сеть более чем в десяти странах мира.
+					</p>
+					<p class="main-subtitle">
+						Мы предоставляем услуги полного цикла по приобретению и продаже недвижимости и управлению
+						активами, предоставляя клиентам неизменно высокое качество сервиса. Наш подход позволяет
+						оптимизировать инвестиционный портфель, диверсифицировать риски и обеспечить полную
+						конфиденциальность сделки.
+					</p>
+					<button class="button let-meeting">Узнать больше</button>
+				</div>
+				<div class="gallery-block-right">
+					<div class="gallery-main-img">
+						<div class="slide">
+							<img src="img/slides/1.png" alt="">
+						</div>
+						<div class="slide">
+							<img src="img/slides/2.png" alt="">
+						</div>
+						<div class="slide">
+							<img src="img/slides/3.png" alt="">
+						</div>
+						<div class="slide">
+							<img src="img/slides/4.png" alt="">
+						</div>
+						<div class="slide">
+							<img src="img/slides/5.png" alt="">
+						</div>
+					</div>
+					<div class="gallery-main-miniature">
+						<button class="prevMini">&lt;</button>
+						<button class="nextMini"> &gt;</button>
+						<div class="miniature-slide">
+							<img src="img/slides/1.png" alt="">
+						</div>
+						<div class="miniature-slide">
+							<img src="img/slides/2.png" alt="">
+						</div>
+						<div class="miniature-slide">
+							<img src="img/slides/3.png" alt="">
+						</div>
+						<div class="miniature-slide">
+							<img src="img/slides/4.png" alt="">
+						</div>
+						<div class="miniature-slide">
+							<img src="img/slides/5.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="directions">
+		<div class="wrapper">
+			<h1 class=" main-heading">Направления нашего агентства</h1>
+			<div class="directions-body">
+				<div class="directions-card">
+					<h3>Аренда жилой недвижимости</h3>
+					<div class="directions-contact">
+						<p class="directions-contact-name">Александр Смирнов</p>
+						<a href="tel:+7(495)199-19-99" class="directions-contact-contact">+7(495)199-19-99</a>
+						<p class="directions-contact-email">moscow@blitz.estate</p>
+					</div>
+					<img src="img/directions/Group 3.png" alt="">
+				</div>
+				<div class="directions-card">
+					<h3>Аренда жилой недвижимости</h3>
+					<div class="directions-contact">
+						<p class="directions-contact-name">Александр Смирнов</p>
+						<a href="tel:+7(495)199-19-99" class="directions-contact-contact">+7(495)199-19-99</a>
+						<p class="directions-contact-email">moscow@blitz.estate</p>
+					</div>
+					<img src="img/directions/Group 8.png" alt="">
+				</div>
+				<div class="directions-card">
+					<h3>Аренда жилой недвижимости</h3>
+					<div class="directions-contact">
+						<p class="directions-contact-name">Александр Смирнов</p>
+						<a href="tel:+7(495)199-19-99" class="directions-contact-contact">+7(495)199-19-99</a>
+						<p class="directions-contact-email">moscow@blitz.estate</p>
+					</div>
+					<img src="img/directions/Group 9.png" alt="">
+				</div>
+				<div class="directions-card">
+					<h3>Аренда жилой недвижимости</h3>
+					<div class="directions-contact">
+						<p class="directions-contact-name">Александр Смирнов</p>
+						<a href="tel:+7(495)199-19-99" class="directions-contact-contact">+7(495)199-19-99</a>
+						<p class="directions-contact-email">moscow@blitz.estate</p>
+					</div>
+					<img src="img/directions/Group 10.png" alt="">
+				</div>
+				<div class="directions-card">
+					<h3>Аренда жилой недвижимости</h3>
+					<div class="directions-contact">
+						<p class="directions-contact-name">Александр Смирнов</p>
+						<a href="tel:+7(495)199-19-99" class="directions-contact-contact">+7(495)199-19-99</a>
+						<p class="directions-contact-email">moscow@blitz.estate</p>
+					</div>
+					<img src="img/directions/Group 11.png" alt="">
+				</div>
+				<div class="directions-card">
+					<h3>Аренда жилой недвижимости</h3>
+					<div class="directions-contact">
+						<p class="directions-contact-name">Александр Смирнов</p>
+						<a href="tel:+7(495)199-19-99" class="directions-contact-contact">+7(495)199-19-99</a>
+						<p class="directions-contact-email">moscow@blitz.estate</p>
+					</div>
+					<img src="img/directions/Group 2.png" alt="">
+				</div>
+				<div class="directions-card">
+					<h3>Аренда жилой недвижимости</h3>
+					<div class="directions-contact">
+						<p class="directions-contact-name">Александр Смирнов</p>
+						<a href="tel:+7(495)199-19-99" class="directions-contact-contact">+7(495)199-19-99</a>
+						<p class="directions-contact-email">moscow@blitz.estate</p>
+					</div>
+					<img src="img/directions/Group 13.png" alt="">
+				</div>
+				<div class="directions-card">
+					<h3>Аренда жилой недвижимости</h3>
+					<div class="directions-contact">
+						<p class="directions-contact-name">Александр Смирнов</p>
+						<a href="tel:+7(495)199-19-99" class="directions-contact-contact">+7(495)199-19-99</a>
+						<p class="directions-contact-email">moscow@blitz.estate</p>
+					</div>
+					<img src="img/directions/Group 2-1.png" alt="">
+				
+				</div>
+			</div>
+			<div class="directions-footer">
+				<a href="#">Blitz Estate – международная
+					компания по управлению
+					недвижимостью и финансами</a>
+				<a href="#">Blitz Estate – международная
+					компания по управлению
+					недвижимостью и финансами</a>
+				<a href="#">Blitz Estate – международная
+					компания по управлению
+					недвижимостью и финансами</a>
+			</div>
+		</div>
+	</section>
+	<section class="our-leader">
+		<div class="wrapper">
+			<div class="leader-body">
+				<div class="leader-block-left">
+					<h1 class="main-heading"><strong>Blitz Estate</strong> - на рынке недвижимости с 2008 года</h1>
+					<p></p>
+					<p class="main-subtitle">Blitz Estate – международная компания по управлению недвижимостью и
+						финансами. Основана в 2008
+						г. в Австрии. На сегодня представлена в Англии, Испании, Латвии, ОАЭ, Австрии и России, кроме
+						того имеет партнерскую сеть более чем в десяти странах мира.
+					</p>
+					<p class="main-subtitle">
+						Мы предоставляем услуги полного цикла по приобретению и продаже недвижимости и управлению
+						активами, предоставляя клиентам неизменно высокое качество сервиса. Наш подход позволяет
+						оптимизировать инвестиционный портфель, диверсифицировать риски и обеспечить полную
+						конфиденциальность сделки.
+					</p>
+					<button class="button let-meeting">Задать вопрос</button>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="footer-body">
+				<div class="footer-contact-info">
+					<p class="footer-time-work">Время работы: <span>Пн-Пт: 8:00-23:00, Сб-Вс: 9:00-21:00</span>
+					</p>
+					<p class="footer-address">Пресненская набережная, дом 12 Башня <span>"Федерация"  Восток, 31 этаж, Офис Р</span></p>
+					<p class="footer-ogrn">ОГРН: 1187746683464 &ensp; &ensp; &ensp;ИНН: 7703462548</p>
+				</div>
+				<div class="logo">
+					<img src="img/LogoFooter.png" alt="">
+					<h1>Продажа недвижимости в Москва-Сити</h1>
+				</div>
+				<div class="callback">
+					<a href="tel:+7 (495) 199-19-99" class="number-tel"><span>+7 (495) 199-19-99</span></a>
+					<a href="mailto:moscow@blitz.estate">moscow@blitz.estate</a>
+					<button class="getCallBack button let-meeting">Заказать звонок</button>
+				</div>
+			</div>
+		</div>
+	</footer>
+</main>
+<aside class="side-menu">
+	<div class="main-heading">Меню</div>
+	<div class="side-menu-links">
+		<a href="#" class="side-link">Ссылка</a>
+		<a href="#" class="side-link">Ссылка</a>
+		<a href="#" class="side-link">Ссылка</a>
+		<a href="#" class="side-link">Ссылка</a>
+	</div>
+	<button class="exit" id="menu-close"></button>
+</aside>
+<button class="scroll-up">&#8593;</button>
+<script src="index.js"></script>
+</body>
+</html>
