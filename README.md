@@ -2,4 +2,4 @@
 Вёрстка по макету. 
 - При вёрстке применял parcel, gulp <br>
 - На данном макете закреплял свои навыки по изучению DOM 
-- Ссылка на результат [Клик](lovepuff-d.github.io/blitz-estate/)
+- Ссылка на результат [Клик](https://lovepuff-d.github.io/blitz-estate/)
